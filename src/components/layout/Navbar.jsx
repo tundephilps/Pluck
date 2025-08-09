@@ -4,11 +4,15 @@ import Logo from "../../assets/Logo.png";
 import Overlay from "../../assets/Overlay.png";
 import { Link } from "react-router-dom";
 
+import NotificationModal from "./Notification";
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
-    <nav className="w-full fixed backdrop-blur-md bg-white/10 z-50 text-white lg:px-12 px-4 py-4 flex items-center justify-between shadow-md border-b border-white/10">
+    <nav className="w-full fixed backdrop-blur-md bg-white/10 z-40 text-white lg:px-12 px-4 py-4 flex items-center justify-between shadow-md border-b border-white/10">
       {/* Left: Logo */}
       <div className="flex items-center gap-4">
         <img src={Logo} alt="Logo" className="w-28 object-contain" />
@@ -68,23 +72,34 @@ const Navbar = () => {
         </div>
 
         {/* Profile */}
-        <div className="flex items-center gap-2">
-          <img
-            src={Overlay}
-            alt="Avatar"
-            className="w-8 h-8 object-cover rounded-full"
-          />
-          <div>
-            <div className="text-gray-100 font-medium">Alexander Wright</div>
-            <div className="text-xs text-gray-400">LEVEL 42</div>
+        <Link to="/Profile">
+          <div className="flex items-center gap-2">
+            <img
+              src={Overlay}
+              alt="Avatar"
+              className="w-8 h-8 object-cover rounded-full"
+            />
+            <div>
+              <div className="text-gray-100 font-medium">Alexander Wright</div>
+              <div className="text-xs text-gray-400">LEVEL 42</div>
+            </div>
           </div>
-        </div>
+        </Link>
 
         {/* Notification Bell */}
-        <div className="relative">
-          <FaBell className="text-white text-lg" />
-          <span className="absolute top-0 right-0 h-2 w-2 bg-green-400 rounded-full"></span>
-        </div>
+        <Link to="/Notifications">
+          <div
+            className="relative"
+            // onClick={() => setIsModalOpen(true)}
+          >
+            <FaBell className="text-white text-lg" />
+            <span className="absolute top-0 right-0 h-2 w-2 bg-green-400 rounded-full"></span>
+          </div>
+        </Link>
+        {/* <NotificationModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        /> */}
       </div>
 
       {/* Mobile Menu */}
@@ -127,17 +142,19 @@ const Navbar = () => {
               <div>$500</div>
               <div className="text-xs text-gray-400">BALANCE</div>
             </div>
-            <div className="flex items-center gap-2">
-              <img
-                src={Overlay}
-                alt="Avatar"
-                className="w-8 h-8 rounded-full"
-              />
-              <div>
-                <div className="font-medium text-white">Alexander Wright</div>
-                <div className="text-xs text-gray-400">LEVEL 42</div>
+            <Link to="/Profile">
+              <div className="flex items-center gap-2">
+                <img
+                  src={Overlay}
+                  alt="Avatar"
+                  className="w-8 h-8 rounded-full"
+                />
+                <div>
+                  <div className="font-medium text-white">Alexander Wright</div>
+                  <div className="text-xs text-gray-400">LEVEL 42</div>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       )}

@@ -10,7 +10,14 @@ import Login from "./Pages/Auth/Login";
 import Signup from "./Pages/Auth/Signup";
 import VerifyEmail from "./Pages/Auth/VerifyEmail";
 import Pricing from "./Pages/Pricing";
-
+import Profile from "./Pages/Profile";
+import WithdrawFunds from "./Pages/WithdrawFunds";
+import TopUp from "./Pages/TopUp";
+import TermsOfService from "./Pages/Terms";
+import PrivacyPolicy from "./Pages/Privacy";
+import GameRules from "./Pages/GameRules";
+import Contact from "./Pages/Contact";
+import Notifications from "./Pages/Notifications";
 function App() {
   return (
     <>
@@ -32,6 +39,20 @@ function App() {
             <Route path="/Tournament" element={<Tournament />} />
 
             <Route path="/Pricing" element={<Pricing />} />
+
+            <Route path="/WithdrawFunds" element={<WithdrawFunds />} />
+
+            <Route path="/Terms" element={<TermsOfService />} />
+
+            <Route path="/Privacy" element={<PrivacyPolicy />} />
+
+            <Route path="/GameRules" element={<GameRules />} />
+
+            <Route path="/SupportCenter" element={<Contact />} />
+            <Route path="/TopUp" element={<TopUp />} />
+
+            <Route path="/Notifications" element={<Notifications />} />
+            <Route path="/Profile" element={<Profile />} />
           </Route>
         </Routes>
       </Router>

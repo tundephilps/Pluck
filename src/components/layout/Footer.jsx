@@ -6,6 +6,7 @@ import {
 } from "react-icons/fa6"; // FaTiktok is from react-icons/fa6 or use tfi from tfi library
 
 import Logo from "../../assets/Logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -25,19 +26,17 @@ const Footer = () => {
           <h3 className="text-sm font-semibold mb-3">Navigation</h3>
           <ul className="space-y-2 text-sm text-[#9CA3AF]">
             <li>
-              <a href="#">Home</a>
+              <Link to="/Home">Home</Link>
+            </li>
+
+            <li>
+              <Link to="/Pricing">Pricing</Link>
             </li>
             <li>
-              <a href="#">Explore</a>
+              <Link to="/TopUp">Wallet</Link>
             </li>
             <li>
-              <a href="#">Pricing</a>
-            </li>
-            <li>
-              <a href="#">Wallet</a>
-            </li>
-            <li>
-              <a href="#">Profile</a>
+              <Link to="/Profile">Profile</Link>
             </li>
           </ul>
         </div>
@@ -47,16 +46,16 @@ const Footer = () => {
           <h3 className="text-sm font-semibold mb-3">Legal</h3>
           <ul className="space-y-2 text-sm text-[#9CA3AF]">
             <li>
-              <a href="#">Terms</a>
+              <Link to="/Terms">Terms</Link>
             </li>
             <li>
-              <a href="#">Privacy</a>
+              <Link to="/Privacy">Privacy</Link>
             </li>
             <li>
-              <a href="#">Game Rules</a>
+              <Link to="/GameRules">Game Rules</Link>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link to="/SupportCenter">Contact</Link>
             </li>
           </ul>
         </div>
