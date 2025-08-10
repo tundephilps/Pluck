@@ -4,7 +4,7 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import GameDetails from "./Pages/GameDetails";
 import LeaderBoard from "./Pages/LeaderBoard";
-import Tournament from "./Pages/Tournament";
+import Tournament from "./Pages/Tournament/Tournament";
 import Layout from "./components/layout/layout";
 import Login from "./Pages/Auth/Login";
 import Signup from "./Pages/Auth/Signup";
@@ -18,6 +18,9 @@ import PrivacyPolicy from "./Pages/Privacy";
 import GameRules from "./Pages/GameRules";
 import Contact from "./Pages/Contact";
 import Notifications from "./Pages/Notifications";
+import SelectedTournament from "./Pages/Tournament/SelectedTournament";
+import SuccessfulSubmission from "./Pages/Tournament/SuccessfulSubmission";
+import MySubmissions from "./Pages/MySubmissions";
 function App() {
   return (
     <>
@@ -34,9 +37,19 @@ function App() {
 
             <Route path="/GameDetails" element={<GameDetails />} />
 
+            <Route path="/MySubmissions" element={<MySubmissions />} />
             <Route path="/LeaderBoard" element={<LeaderBoard />} />
 
             <Route path="/Tournament" element={<Tournament />} />
+
+            <Route
+              path="/SelectedTournament"
+              element={<SelectedTournament />}
+            />
+            <Route
+              path="/SuccessfulSubmission"
+              element={<SuccessfulSubmission />}
+            />
 
             <Route path="/Pricing" element={<Pricing />} />
 

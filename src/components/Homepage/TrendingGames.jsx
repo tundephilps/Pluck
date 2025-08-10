@@ -7,14 +7,10 @@ import { MdOutlineCreditScore, MdOutlineMessage } from "react-icons/md";
 import { IoTimeOutline } from "react-icons/io5";
 import Leaf from "../../assets/Leaf.png";
 import Smile from "../../assets/Smile.png";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const TrendingGames = () => {
   const navigate = useNavigate();
-
-  const handleGameDetails = () => {
-    navigate("/GameDetails"); // this routes to the homepage
-  };
 
   return (
     <div className="text-white grid lg:grid-cols-3 grid-cols-1 w-full z-50">
@@ -73,12 +69,12 @@ const TrendingGames = () => {
             </div>
           </div>
           {/* Action Button */}
-          <button
-            onClick={handleGameDetails}
-            className="bg-[#00DAE4] hover:bg-cyan-700 cursor-pointer  text-black font-medium text-sm py-2 px-4 rounded-md"
-          >
-            Pluck in
-          </button>
+
+          <Link to="/GameDetails">
+            <button className="bg-[#00DAE4] hover:bg-cyan-700 cursor-pointer  text-black font-medium text-sm py-2 px-4 rounded-md">
+              Pluck in
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaTrophy, FaUsers, FaClock } from "react-icons/fa";
 import Cross from "../assets/Cross.png";
 import MoreLikeThis from "../components/GameDetails/MoreLikeThis";
+import AnswerInputModal from "../components/GameDetails/AnswerInputModal";
 
 const GameDetails = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="py-28">
       <section className=" p-4 md:p-12  text-white">
@@ -49,9 +51,13 @@ const GameDetails = () => {
           </div>
 
           {/* Button */}
-          <button className="bg-cyan-400 hover:bg-cyan-300 text-black px-6 py-2 rounded-full font-medium flex items-center gap-2">
+          <button
+            onClick={() => setIsOpen(true)}
+            className="bg-cyan-400 hover:bg-cyan-300 text-black px-6 py-2 rounded-full font-medium flex items-center gap-2"
+          >
             Submit Your Answer <span className="text-lg">➜</span>
           </button>
+          {isOpen && <AnswerInputModal setIsOpen={setIsOpen} />}
         </div>
       </section>
 

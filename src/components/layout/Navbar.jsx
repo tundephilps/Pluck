@@ -12,7 +12,7 @@ const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <nav className="w-full fixed backdrop-blur-md bg-white/10 z-40 text-white lg:px-12 px-4 py-4 flex items-center justify-between shadow-md border-b border-white/10">
+    <nav className="w-full fixed backdrop-blur-md bg-white/10 z-20 text-white lg:px-12 px-4 py-4 flex items-center justify-between shadow-md border-b border-white/10">
       {/* Left: Logo */}
       <div className="flex items-center gap-4">
         <img src={Logo} alt="Logo" className="w-28 object-contain" />
