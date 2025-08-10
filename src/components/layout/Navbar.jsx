@@ -36,7 +36,7 @@ const Navbar = () => {
       </div>
 
       {/* Center Nav Links (Desktop) */}
-      <ul className="hidden md:flex gap-6 text-sm tracking-wide text-gray-200">
+      <ul className="hidden md:flex gap-6 pl-44 text-sm tracking-wide text-gray-200">
         <Link
           to="/Home"
           className="hover:text-white text-[#D1D5DB] cursor-pointer"
@@ -60,6 +60,12 @@ const Navbar = () => {
           className="hover:text-white text-[#D1D5DB] cursor-pointer"
         >
           PRICING
+        </Link>
+        <Link
+          to="/MySubmissions"
+          className="hover:text-white text-[#D1D5DB] cursor-pointer"
+        >
+          MY SUBMISSIONS
         </Link>
       </ul>
 
@@ -133,6 +139,13 @@ const Navbar = () => {
               onClick={() => setMenuOpen(false)}
             >
               PRICING
+            </Link>
+            <Link
+              to="/MySubmissions"
+              className="hover:text-white r"
+              onClick={() => setMenuOpen(false)}
+            >
+              MY SUBMISSIONS
             </Link>
           </ul>
 

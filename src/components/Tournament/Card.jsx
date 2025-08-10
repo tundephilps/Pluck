@@ -77,7 +77,7 @@ const Card = () => {
       <div className="inline-flex gap-4 w-full">
         <button
           onClick={handleGameDetails}
-          className="bg-[#238636] inline-flex items-center gap-2 hover:bg-cyan-700 cursor-pointer  text-white font-medium text-sm py-2 px-4 w-full rounded-md"
+          className="bg-[#238636] inline-flex justify-center items-center gap-2 hover:bg-cyan-700 cursor-pointer  text-white font-medium text-sm py-2 px-4 w-full rounded-md"
         >
           <FaPlus /> Join Tournament
         </button>{" "}
