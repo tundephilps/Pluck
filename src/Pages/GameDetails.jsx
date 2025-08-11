@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaTrophy, FaUsers, FaClock } from "react-icons/fa";
 import Cross from "../assets/Cross.png";
 import MoreLikeThis from "../components/GameDetails/MoreLikeThis";
@@ -6,6 +6,10 @@ import AnswerInputModal from "../components/GameDetails/AnswerInputModal";
 
 const GameDetails = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="py-28">
       <section className=" p-4 md:p-12  text-white">

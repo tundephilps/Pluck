@@ -2,7 +2,7 @@ import React from "react";
 import { BsHourglassSplit } from "react-icons/bs";
 import { FaMoneyBill1Wave } from "react-icons/fa6";
 import { MdOutlineCreditScore } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Leaf from "../../assets/Leaf.png";
 
@@ -15,9 +15,6 @@ import { FaPlus } from "react-icons/fa";
 const Card = () => {
   const navigate = useNavigate();
 
-  const handleGameDetails = () => {
-    navigate("/SelectedTournament"); // this routes to the homepage
-  };
   return (
     <div className="bg-gradient-to-br from-[#171b34] to-[#063b40] border-cyan-400 border rounded-lg overflow-hidden p-4 text-white shadow-md shadow-cyan-300">
       {/* Header */}
@@ -75,18 +72,19 @@ const Card = () => {
       </div>
       {/* Action Button */}
       <div className="inline-flex gap-4 w-full">
-        <button
-          onClick={handleGameDetails}
-          className="bg-[#238636] inline-flex justify-center items-center gap-2 hover:bg-cyan-700 cursor-pointer  text-white font-medium text-sm py-2 px-4 w-full rounded-md"
-        >
-          <FaPlus /> Join Tournament
-        </button>{" "}
-        <button
-          onClick={handleGameDetails}
-          className="bg-[#21262c] hover:bg-cyan-700 cursor-pointer  text-white font-medium text-sm py-2 px-4 w-full rounded-md"
-        >
-          View Submission
-        </button>
+        <Link to="/SelectedTournament" className="w-full">
+          <button
+            // onClick={handleGameDetails}
+            className="bg-[#238636] inline-flex  justify-center items-center gap-2 hover:bg-cyan-700 cursor-pointer  text-white font-medium text-sm py-2 px-4 w-full rounded-md"
+          >
+            <FaPlus /> Join Tournament
+          </button>{" "}
+        </Link>
+        <Link to="/MySubmissions" className="w-full">
+          <button className="bg-[#21262c]  hover:bg-cyan-700 cursor-pointer  text-white font-medium text-sm py-2 px-4 w-full rounded-md">
+            View Submission
+          </button>
+        </Link>
       </div>
     </div>
   );

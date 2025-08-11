@@ -31,7 +31,7 @@ const AnswerInputModal = ({ setIsOpen }) => {
         {step === "form" && (
           <div>
             <h1 className="text-2xl pl-24 font-semibold">Count Down: 45min</h1>
-            <div className="bg-[#1c1c1c] text-white w-[90%] max-w-md px-6 py-2  rounded-lg relative shadow-cyan-600 shadow-lg">
+            <div className="bg-[#1c1c1c] text-white lg:w-[90%] w-full  max-w-md px-6 py-2  rounded-lg relative shadow-cyan-600 shadow-lg">
               <button
                 onClick={() => setIsOpen(false)}
                 className="absolute top-3 right-3 text-white hover:text-gray-400"

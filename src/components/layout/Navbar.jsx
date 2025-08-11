@@ -72,10 +72,12 @@ const Navbar = () => {
       {/* Right Side (Desktop Only) */}
       <div className="hidden md:flex items-center gap-6 text-sm">
         {/* Balance */}
-        <div className="text-right">
-          <div className="text-gray-200">$500</div>
-          <div className="text-xs text-gray-400">BALANCE</div>
-        </div>
+        <Link to="/TopUp">
+          <div className="text-right">
+            <div className="text-gray-200">$500</div>
+            <div className="text-xs text-gray-400">BALANCE</div>
+          </div>
+        </Link>
 
         {/* Profile */}
         <Link to="/Profile">

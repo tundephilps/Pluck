@@ -98,12 +98,12 @@ export default function SuccessfulSubmission() {
         {/* Confirm Button */}
 
         <div className="inline-flex items-center gap-8 w-full">
-          <Link className="w-full" to="/TournamentHub">
+          <Link className="w-full" to="/Tournament">
             <button className="w-full py-2 rounded-md text-black bg-[#00DAE4] hover:bg-cyan-700 font-semibold ">
               ✅Back to Tournamet
             </button>{" "}
           </Link>
-          <Link className="w-full" to="/Submissions">
+          <Link className="w-full" to="/MySubmissions">
             <button className="w-full py-2 rounded-md text-white bg-transparent border hover:bg-cyan-700 font-semibold ">
               View My Entries
             </button>

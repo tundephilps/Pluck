@@ -21,10 +21,13 @@ import Notifications from "./Pages/Notifications";
 import SelectedTournament from "./Pages/Tournament/SelectedTournament";
 import SuccessfulSubmission from "./Pages/Tournament/SuccessfulSubmission";
 import MySubmissions from "./Pages/MySubmissions";
+import ScrollToTop from "./components/layout/ScrollToTop";
+
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Login />} />
 
