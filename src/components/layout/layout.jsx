@@ -3,14 +3,21 @@ import Navbar from "./Navbar";
 
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
+import Pad2 from "../../assets/Pad2.png";
+
+import Pad3 from "../../assets/Pad3.png";
 
 const Layout = () => {
   return (
     <div
+      className="relative"
       style={{
         background: `radial-gradient(circle, #0f5255 10%, #000000 100%)`,
       }}
     >
+      <img src={Pad2} className="absolute bottom-[30%]" />
+
+      <img src={Pad3} className="absolute top-[20%] right-0" />
       <Navbar />
       <Outlet />
       <Footer />
