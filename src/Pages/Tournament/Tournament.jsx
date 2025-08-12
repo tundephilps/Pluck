@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 import Card from "../../components/Tournament/Card";
 import AllTournaments from "../../components/Tournament/AllTournaments";
 import PastTournaments from "../../components/Tournament/PastTournaments";
+import CardSwiper from "../../components/Tournament/CardSwiper";
 
 const tabs = [
   { id: "all", label: "All Tournaments", icon: "🔥" },
@@ -42,10 +43,11 @@ const Tournament = () => {
         Ready to test your creativity and climb the ranks?
       </p>
 
-      <div className="text-white grid lg:grid-cols-3 grid-cols-1 w-full z-50">
-        {/* Card */}
+      {/* <div className="text-white grid lg:grid-cols-3 grid-cols-1 w-full z-50">
+     
         <Card />
-      </div>
+      </div> */}
+      <CardSwiper />
 
       {/* Tabs */}
       <div className="flex gap-6 items-center text-sm font-medium  pt-8  mx-auto  overflow-x-auto whitespace-nowrap">
