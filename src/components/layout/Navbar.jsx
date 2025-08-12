@@ -155,10 +155,13 @@ const Navbar = () => {
 
           {/* Profile Summary on Mobile */}
           <div className="mt-6 border-t border-white/10 pt-4 px-6 flex flex-col gap-4 items-center text-sm text-gray-200">
-            <div className="text-center">
-              <div>$500</div>
-              <div className="text-xs text-gray-400">BALANCE</div>
-            </div>
+            <Link to="/TopUp">
+              <div className="text-center">
+                <div>$500</div>
+                <div className="text-xs text-gray-400">BALANCE</div>
+              </div>
+            </Link>
+
             <Link to="/Profile">
               <div className="flex items-center gap-2">
                 <img
