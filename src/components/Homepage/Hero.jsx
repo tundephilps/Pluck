@@ -11,7 +11,7 @@ const Hero = () => {
       </p>
 
       <h1 className="text-4xl md:text-6xl font-bold mb-2">
-        DOMINATE THE ARENA
+        FEED YOUR WALLET
       </h1>
 
       <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#00F5FF] to-[#6B21A8] bg-clip-text text-transparent">
