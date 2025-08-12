@@ -21,11 +21,13 @@ const Navbar = () => {
       {/* Mobile Only: Bell + Hamburger */}
       <div className="flex items-center gap-4 md:hidden">
         {/* Bell */}
-        <div className="relative">
-          <FaBell className="text-white text-xl" />
-          <span className="absolute top-0 right-0 h-2 w-2 bg-green-400 rounded-full"></span>
-        </div>
 
+        <Link to="/Notifications">
+          <div className="relative">
+            <FaBell className="text-white text-xl" />
+            <span className="absolute top-0 right-0 h-2 w-2 bg-green-400 rounded-full"></span>
+          </div>
+        </Link>
         {/* Hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}

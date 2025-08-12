@@ -2,9 +2,9 @@ import React from "react";
 
 import { BsCircleFill, BsHourglassSplit } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
-import { FaMoneyBill1Wave } from "react-icons/fa6";
+import { FaArrowsDownToPeople, FaMoneyBill1Wave } from "react-icons/fa6";
 import { MdOutlineCreditScore, MdOutlineMessage } from "react-icons/md";
-import { IoTimeOutline } from "react-icons/io5";
+import { IoPeople, IoTimeOutline } from "react-icons/io5";
 import Leaf from "../../assets/Leaf.png";
 import Smile from "../../assets/Smile.png";
 import { Link, useNavigate } from "react-router-dom";
@@ -63,8 +63,8 @@ const TrendingGames = () => {
               </div>
 
               <div className="flex items-center gap-1">
-                <BsHourglassSplit className="text-gray-400" />
-                <span>03h 49m</span>
+                <IoPeople className="text-gray-400" />
+                <span>4/5 Left</span>
               </div>
             </div>
           </div>
