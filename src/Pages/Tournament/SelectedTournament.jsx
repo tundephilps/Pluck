@@ -16,7 +16,7 @@ export default function SelectedTournament() {
   };
 
   return (
-    <div className="min-h-screen bg-black py-12 text-white flex flex-col items-center p-6 relative overflow-hidden">
+    <div className="min-h-[140vh] bg-black py-12 text-white flex flex-col items-center p-6 relative overflow-hidden">
       {/* Header */}
       <div className="text-center mb-8">
         <h1 className="text-2xl font-bold flex items-center justify-center gap-2 pt-12">
