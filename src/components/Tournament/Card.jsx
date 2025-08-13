@@ -16,7 +16,7 @@ const Card = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-gradient-to-br from-[#171b34] to-[#063b40] border-cyan-400 border rounded-lg overflow-hidden p-4 text-white shadow-md shadow-cyan-300 z-50">
+    <div className="bg-gradient-to-br from-[#171b34] to-[#063b40] border-cyan-400 border rounded-lg overflow-hidden p-4 text-white shadow-md shadow-cyan-300 z-10">
       {/* Header */}
       <div className="flex items-center gap-2 mb-4">
         <div className="bg-black px-3 py-0.5 text-xs rounded flex items-center gap-1">

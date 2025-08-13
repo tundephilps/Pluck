@@ -47,7 +47,7 @@ export default function SuccessfulSubmission() {
         alt=""
       /> */}
       {/* Tournament Card */}
-      <div className="bg-[#0D0D0D] border-4 border-[#00dae4] rounded-lg p-6 w-full max-w-3xl shadow-lg relative z-30 p">
+      <div className="bg-[#0D0D0D] border-4 border-[#00dae4] rounded-lg p-6 w-full max-w-3xl shadow-lg relative  ">
         {/* Tournament Title */}
 
         <img
