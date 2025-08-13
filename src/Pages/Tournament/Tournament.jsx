@@ -43,7 +43,7 @@ const Tournament = () => {
         Ready to test your creativity and climb the ranks?
       </p>
 
-      <div className="text-white grid lg:grid-cols-3 grid-cols-1 w-full z-50">
+      <div className="text-white grid lg:grid-cols-3 grid-cols-1 w-full ">
         <Card />
       </div>
       {/* <CardSwiper /> */}
