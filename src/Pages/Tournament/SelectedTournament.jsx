@@ -97,7 +97,7 @@ export default function SelectedTournament() {
               className="w-full py-2 rounded-md text-black bg-[#00DAE4] hover:bg-cyan-700 font-semibold"
               onClick={handleSubmit}
             >
-              ✅ Confirm & Submit
+              ✅ {currentCard < 5 ? "Confirm" : "Confirm & Submit"}
             </button>
             <button className="w-full py-2 rounded-md text-white bg-transparent border hover:bg-cyan-700 font-semibold">
               ❌ Cancel
