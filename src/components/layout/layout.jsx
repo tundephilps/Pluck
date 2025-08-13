@@ -15,9 +15,9 @@ const Layout = () => {
         background: `radial-gradient(circle, #0f5255 10%, #000000 100%)`,
       }}
     >
-      <img src={Pad2} className="absolute bottom-[30%]" />
+      <img src={Pad2} className="absolute bottom-[30%] z-0" />
 
-      <img src={Pad3} className="absolute top-[20%] right-0" />
+      <img src={Pad3} className="absolute top-[20%] right-0 z-0" />
       <Navbar />
       <Outlet />
       <Footer />

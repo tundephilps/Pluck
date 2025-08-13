@@ -22,7 +22,7 @@ const Homepage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-center text-white ">
       <Hero />
-      <div className=" space-y-6  h-full w-full z-20 py-8  lg:px-12 px-2 mx-auto">
+      <div className=" space-y-6  h-full w-full  py-8  lg:px-12 px-2 mx-auto">
         <div className="flex">
           <button
             className={`px-4 py-3 flex items-center space-x-2 lg:text-sm text-[10px] focus:outline-none ${
