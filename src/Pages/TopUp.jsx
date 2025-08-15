@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const TopUp = () => {
   return (
     <div className="grid lg:grid-cols-3 lg:px-32 px-4 py-28 gap-4  w-full">
-      <div className="space-y-8 lg:col-span-2 z-50">
+      <div className="space-y-8 lg:col-span-2 ">
         <TopUpComponent />
         <WalletHistory />
       </div>
