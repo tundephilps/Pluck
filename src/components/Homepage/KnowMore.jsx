@@ -7,24 +7,24 @@ export default function KnowMoreSection() {
   const features = [
     {
       icon: <img src={Know1} className="h-12" alt="Epic Tournaments" />,
-      title: "Epic Tournaments",
+      title: "Tournaments",
       description:
-        "Enter the battlefield of minds with massive tournaments and pools. Rise through the ranks to become a legend.",
+        "Join tournaments with low entry and big rewards. We celebrate not just winners but also Pluckers who bring the most humor to the game.",
       learnMore: "Learn More",
     },
     {
       icon: <img src={Know2} className="h-12" alt="Lightning Rounds" />,
-      title: "Lightning Rounds",
+      title: "VIP",
       description:
-        "20-second intense battles test your reflexes and knowledge. Every second counts in your quest for victory.",
-      learnMore: "Learn More",
+        "Become a Very Important Plucker. unlock tournaments, unlimited gameplay, verified status, custom support, and first access to upcoming rewards.",
+      learnMore: "Unlock Access",
     },
     {
       icon: <img src={Know3} className="h-12" alt="Elite Rewards" />,
-      title: "Elite Rewards",
+      title: "Plucked",
       description:
-        "Instant withdrawals fit for champions. Unlock elite bonuses ensure your victories are properly rewarded.",
-      learnMore: "Learn More",
+        "One out of every five Pluckers is randomly selected by our encrypted software, with no human involvement, ensuring a completely fair and transparent game that continues automatically with fresh rounds.",
+      learnMore: "Pluck in",
     },
   ];
 

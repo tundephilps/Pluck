@@ -6,7 +6,7 @@ import { MdSecurity, MdAttachMoney, MdGroup } from "react-icons/md";
 const Hero = () => {
   return (
     <motion.div
-      className="min-h-screen flex flex-col items-center justify-center text-center text-white px-4"
+      className="min-h-full pt-[30vh] flex flex-col items-center justify-center text-center text-white px-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -35,7 +35,7 @@ const Hero = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.6 }}
       >
-        WIN BIG DAILY
+        PLAY.PLUCK.PROSPER
       </motion.h2>
 
       <motion.p
@@ -44,12 +44,14 @@ const Hero = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.8 }}
       >
-        Battle against the best minds in lightning-fast quiz tournaments. Enter
-        the arena, prove your worth, and claim your share of massive prize
-        pools.
+        Welcome, Pluckers! Dive into exciting daily challenges where every
+        answer is part of the fun. There are no right or wrong choices, just
+        simple questions that keep the game lively. With our machine learning
+        technology, winners are chosen through random selection, giving every
+        player a completely fair chance to win
       </motion.p>
 
-      <motion.div
+      {/* <motion.div
         className="flex gap-4 flex-wrap justify-center"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -103,7 +105,7 @@ const Hero = () => {
           <MdGroup className="w-4 h-4 text-[#00F5FF]" />
           <span>50K+ Players</span>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 };
